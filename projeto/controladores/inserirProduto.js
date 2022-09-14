@@ -7,11 +7,16 @@ let incrementalId = 8;
 
 const inserirProduto = () => {
   console.log("Id atual: " + incrementalId);
-  incrementalId++
-  console.log("Dê enter para voltar");
-  readline.question();
-  console.clear();
-}
+  incrementalId++;
+
+  console.log("Insera o nome do produto");
+  const nomeProduto = readline.question();
+
+  console.log("Informar o valor unitario");
+  const precoInserido = readline.question();
+   
+  console.log("Qual sera a quantidade adquirida");
+  const quantidadeAdquirida = readline.question();
 
 module.exports = {
   inserirProduto
